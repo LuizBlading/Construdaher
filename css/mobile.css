@@ -1,0 +1,57 @@
+@media only screen and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .navbar-brand{
+        margin: 0;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .empresa-content{
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    .about{
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #lema{
+        height: 90%;
+    }
+
+    figure{
+        height: auto;
+    }
+
+    #homeImage{
+        width: 30%;
+        height: 30%;
+    }
+
+    .portfolio-content{
+        position: relative;
+        top: 3em;
+    }
+
+    .mapa iframe{
+        left: 0;
+    }
+
+    footer #btnInicio{
+        right: 2%;
+        transform: scale(0.8);
+    }
+}

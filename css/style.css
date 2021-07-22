@@ -1,0 +1,398 @@
+:root{
+    --color-main: #1a018a; 
+    --color-title-1: #333;
+    --color-background: #f0f0f0;
+    --color-text: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+    /* faz a pagina rolar devagar */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--color-background);
+    
+}
+
+hr{
+    background-color: var(--color-main);
+}
+
+/* Navgation bar */
+
+.navbar{
+    background-color: var(--color-main);
+    /* height: 60px;
+    padding: 0; */
+}
+.navbar a{
+    color: #eee;
+}
+
+/* .navbar li{
+    margin-right: 10px;
+    
+} */
+
+.navbar a:not(.navbar-brand):hover{
+    color: #7484ff;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border: 2px solid #fff;
+} 
+
+nav .logo{
+    width: 30%;
+    height: 20%;
+    
+}
+
+/* .navbar-brand{
+    margin: 10px auto;
+}
+
+
+
+.navbar-nav{
+    margin-left: 1em;
+}
+
+.navbar a{
+    color: #eee;
+}
+
+.navbar li{
+    margin-right: 10px;
+    
+}
+
+.navbar a:not(.navbar-brand):hover{
+    color: #7484ff;
+}
+
+.navbar-brand{
+    margin-left: 10px;
+    padding: 5px;
+    
+} */
+
+/* Banner */
+.banner{
+    height: 300px;
+    background: url('../images/construction-concept.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+}
+
+h4 , h5{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: var(--color-main);
+    font-weight: bold;
+    text-align: center;
+    margin: 3em 0em 2em 0em;
+}
+
+h5{
+    font-size: medium;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.container{
+    margin-top: 2em;
+}
+
+/* Content Center - sobre a empresa - missão*/
+.empresa-content{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    height: 550px;
+}
+
+.about{
+    margin: 1em;
+    float: left;
+    width: 500px;
+}
+
+.about p{
+    display: flex;
+    align-items: center;
+    text-align:justify;
+}
+
+/* Arrumando posicionamento do section do texto do lema da empresa */
+#lema{
+    position: relative;
+    top: 1em;
+}
+
+#lema h6{
+    color: var(--color-main);
+    font-weight: bold;
+}
+
+/* Mudando as proporções da imagem */
+#homeImage{
+    position: relative;
+    top: 55px;
+    border: 4px solid var(--color-main);
+    transform: rotate(45deg);
+    width: 25%;
+    height: 25%;
+}
+
+
+/* Espaço com os cards do portfolio */
+.portfolio-cards{
+    background-color: var(--color-main);
+    border-radius: 5px;
+    height: auto;
+    width: 95%;
+    padding: 1.5em 3em;
+    margin: auto 2em;
+    display: block;
+    float: left;
+}
+
+.card-content{
+    background-color: #eee;
+    border-radius: 10px;
+    width: 270px;
+    height: 350px;
+    padding: 1em;
+    margin: 1em 1.2em;
+    text-align: center;
+    font-size: 1.1em;
+    display: block;
+    float: left;
+}
+
+.card-content h2{
+    height: 60px;
+    margin: 1em 0em;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-title-1);
+
+}
+
+.card-img{
+    margin: 2em 0em;
+}
+
+.card-img img{
+    margin: auto 15px;
+}
+
+/* Block onde fica o carousel */
+.carousel-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+
+}
+
+.carousel{
+    width: 100%; 
+}
+
+.carousel-item {
+    /* Efeito sob a imagem, criando uma camada por cima com um gradiente */
+    background-image: linear-gradient(90deg, #000 100%, #000 100%);
+}
+
+.carousel img{
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, #000 30%);
+}
+
+.lineCarousel{
+    background-color: var(--color-text);
+    height: 2px;
+}
+
+
+form{  
+    margin: 2em 0em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+/* Alinhando o formulario ao centro */
+.formContent{
+    display: flex;
+    justify-content: center;
+}
+
+/* DIVs com cada componente */
+.row{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 1em;
+}
+
+.row label{
+    margin-right: 1em;
+    color: var(--color-main);
+    font-weight: bold;
+    font-size: 1.2em;
+    grid-column: 100px;
+    width: 100px;
+}
+
+.row select{
+    grid-column: auto;
+    width: 250px;
+    padding: 5px;
+    border: 2px solid var(--color-main);
+    border-radius: 5px;
+}
+
+.row .inputField{
+    grid-column: auto;
+    width: 250px;
+    padding: 5px;
+    border: 2px solid var(--color-main);
+    border-radius: 5px;
+}
+
+.row textarea{
+    padding: 5px;
+    border: 2px solid var(--color-main);
+    border-radius: 5px;
+    width: 400px;
+}
+
+.row #btnSubmit{
+    grid-column: auto;
+    width: 120px;
+    background-color: var(--color-main);
+    color: var(--color-text);
+    border: 0px none;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+#atuacao{
+    position: relative;
+}
+
+.contato-container{
+    position: relative;
+    top: 5em;
+}
+
+.mapa{
+    position: relative;
+    top: 4em;
+}
+
+iframe{
+    position: relative;
+    left: 300px;
+}
+
+footer{
+    position: relative;
+    top: 2em;
+    background: var(--color-main);
+    color: var(--color-text);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 0.8em;
+    margin-top: 4em;
+    text-align: center;
+}
+
+footer div{
+    margin-top: 25px; 
+}
+
+#midias-info{
+    grid-column: 600px;
+    margin: 2.3em 1em 0 1em;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#facebook-midia{
+    position: relative;
+    left: 10px;
+    top: -15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#facebook-midia img{
+    width: 40px;
+    height: 40px;
+}
+
+#dev-info{
+    grid-column: 1 / 2 span;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+#dev-info a{
+    text-decoration: none;
+    color: var(--color-text);
+    float: left;
+    margin-left: 2em;
+}
+
+#btnInicio{
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    background-color: #fff;
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+    border-radius: 64px;
+    color: var(--color-main);
+    cursor: pointer;
+}
+
+#btnInicio a{
+    text-decoration: none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnInicio img{
+    width: 32px;
+    height: 32px;
+}
