@@ -162,14 +162,11 @@ h3{
 
 
 /* Espaço com os cards do portfolio */
-.portfolio-cards{
+.atuacao-cards{
     background-color: var(--color-main);
     border-radius: 5px;
-    height: auto;
-    width: 95%;
     padding: 1.5em 3em;
     margin: auto 2em;
-    display: block;
     float: left;
 }
 
@@ -297,10 +294,6 @@ form{
     border: 0px none;
     border-radius: 25px;
     padding: 5px;
-}
-
-#atuacao{
-    position: relative;
 }
 
 .contato-container{

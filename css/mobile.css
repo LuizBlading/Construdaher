@@ -46,12 +46,42 @@
         top: 3em;
     }
 
+    .atuacao-cards{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        width: 100%;
+        margin: auto 0;
+        padding: 5%;
+    }
+
+    .mapa div{
+        display: flex;
+        justify-content: center;
+    }
+
     .mapa iframe{
         left: 0;
+    }
+
+    footer div:not(#facebook-midia){
+        margin-top: 5%;
     }
 
     footer #btnInicio{
         right: 2%;
         transform: scale(0.8);
+    }
+
+    footer #midias-info{
+        display: block;
+        position: relative;
+        top: 11%;
+    }
+
+    footer #midias-info #facebook-midia{
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
     }
 }
