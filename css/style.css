@@ -16,8 +16,7 @@ html{
 
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: var(--color-background);
-    
+    background: var(--color-background);  
 }
 
 hr{
@@ -28,17 +27,17 @@ hr{
 
 .navbar{
     background-color: var(--color-main);
-    /* height: 60px;
-    padding: 0; */
+    height: 70px;
 }
+
 .navbar a{
     color: #eee;
 }
 
-/* .navbar li{
+.navbar li{
     margin-right: 10px;
     
-} */
+}
 
 .navbar a:not(.navbar-brand):hover{
     color: #7484ff;
@@ -55,37 +54,7 @@ hr{
 nav .logo{
     width: 30%;
     height: 20%;
-    
 }
-
-/* .navbar-brand{
-    margin: 10px auto;
-}
-
-
-
-.navbar-nav{
-    margin-left: 1em;
-}
-
-.navbar a{
-    color: #eee;
-}
-
-.navbar li{
-    margin-right: 10px;
-    
-}
-
-.navbar a:not(.navbar-brand):hover{
-    color: #7484ff;
-}
-
-.navbar-brand{
-    margin-left: 10px;
-    padding: 5px;
-    
-} */
 
 /* Banner */
 .banner{
@@ -113,10 +82,6 @@ h3{
     font-weight: bold;
 }
 
-
-.container{
-    margin-top: 2em;
-}
 
 /* Content Center - sobre a empresa - missão*/
 .empresa-content{
@@ -294,6 +259,12 @@ form{
     border: 0px none;
     border-radius: 25px;
     padding: 5px;
+    transition: 0.5s;
+}
+
+.row #btnSubmit:hover{
+    background-color: #2500ca;
+    transition: 0.5s;
 }
 
 .contato-container{

@@ -5,6 +5,8 @@
 
     .navbar{
         width: 100%;
+        height: auto;
+        padding: 0 3%;
     }
 
     .navbar-brand{
@@ -84,4 +86,67 @@
         justify-content: center;
         margin-top: 10%;
     }
+}
+
+@media only screen and (max-width: 425px){
+    body {
+        width: 100%;
+    }
+
+    .atuacao-cards{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .atuacao-cards .card-content{
+        position: relative;
+        margin: 5% 15%;
+        width: 70%;
+        height: 30%;
+    }
+
+    .mapa div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .mapa iframe{
+        left: 0;
+    }
+
+    footer{
+        font-size: 0.8em;
+    }
+
+    footer .endereco{
+        width: 81%;
+        word-wrap: break-word;
+    }
+
+    footer #midias-info{
+        width: 100%;
+        margin: 2% -20%;
+    }
+    
+    footer #midias-info #facebook-midia{
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    footer #midias-info h6{
+        font-size: 0.9em;
+    }
+
+    footer div:not(#facebook-midia){
+        margin-top: 5%;
+    }
+
+    footer #btnInicio{
+        right: 2%;
+        transform: scale(0.85);
+    }
+
 }
