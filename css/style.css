@@ -90,7 +90,7 @@ nav .logo{
 /* Banner */
 .banner{
     height: 300px;
-    background: url('../images/construction-concept.jpg') no-repeat;
+    background: url('../images/construction-concept.webp') no-repeat;
     background-size: cover;
     background-position: 0 20%;
 }
